@@ -1,0 +1,49 @@
+	* Como ele funciona:
+	A função do IP é ajudar o seu dispositivo a encontra e resgatar o que procura na internet.
+	Para isso, é atribiuído ao dispositivo um endereço que é ÚNICO e serve para que outros dispositivos o encontrem e identifiquem.
+	Geralmente, dentre da sua rede local, cada aparelho tem um IP que se comunica com seu roteador/gateway, este que, por sua vez, possui outro endereço IP e cuida de concectar os dispositivos "internos" aos "externos".
+	Para que toda essa comunicação seja possível, dentro do pacote é adiciona ao cabeçalho o endereço IP do destinatário e do remetente. Caso esse pacote precise passar por uma rede que náo suporta um pacote deste tamanho, esse pacote é fragmentado e todo o endereço é adicionado a ele novamente
+
+
+	* enereçamento IP:
+	É feita uma distinção entre nomes, endereços e rotas [4].   UM
+    o nome indica o que procuramos.  Um endereço indica onde está.  UM
+    rota indica como chegar lá.  O protocolo da Internet trata
+    principalmente com endereços.  É tarefa de nível superior (ou seja,
+    protocolos host-to-host ou aplicação) para fazer o mapeamento de
+    nomes para endereços.   O módulo de internet mapeia endereços de internet para
+    endereços de rede locais.  É tarefa de nível inferior (ou seja, rede local
+    ou gateways) procedimentos para fazer o mapeamento a partir de endereços de rede locais
+    às rotas.
+
+    Os endereços têm comprimento fixo de quatro octetos (32 bits).  Um endereço
+    começa com um número de rede, seguido pelo endereço local (chamado de
+    campo "descanso").  Existem três formatos ou classes de internet
+    endereços: na classe a, o bit de ordem superior é zero, os próximos 7 bits
+    são a rede e os últimos 24 bits são o endereço local; em
+    classe b, os dois bits de ordem superior são um-zero, os próximos 14 bits são
+    a rede e os últimos 16 bits são o endereço local; na classe c,
+    os três bits de ordem superior são um-um-zero, os próximos 21 bits são os
+    rede e os últimos 8 bits são o endereço local.
+
+    Deve-se ter cuidado ao mapear endereços da Internet para a rede local
+    endereços; um único host físico deve ser capaz de agir como se fosse
+    vários hosts distintos, a ponto de usar vários
+    endereços de internet.  Alguns hosts também terão vários recursos físicos
+    interfaces (multi-homing).
+
+    Ou seja, deve-se prever que um host tenha vários recursos físicos
+    interfaces com a rede, cada uma tendo vários Internet lógica
+    endereços.
+
+	* Diferenças entre IPV4 e IPV6:
+	O IPv4 não foi capaz de lidar com a enorme explosão na quantidade e variedade de dispositivos além dos simples telefones celulares, computadores desktop e laptops. O formato de endereço IP original não foi capaz de lidar com o número de endereços IP criados.
+	Para resolver esse problema, o IPv6 foi introduzido. Este novo padrão opera em formato hexadecimal, o que significa que agora podem ser criados bilhões de endereços IP exclusivos. Como resultado, o sistema IPv4 que poderia suportar cerca de 4,3 mil milhões de números únicos foi substituído por uma alternativa que, teoricamente, oferece endereços IP ilimitados.
+	Isso ocorre porque um endereço IP IPv6 consiste em oito grupos que contêm quatro dígitos hexadecimais, que usam 16 símbolos distintos de 0 a 9 seguidos de A a F para representar valores de 10 a 15.
+
+
+https://datatracker.ietf.org/doc/html/rfc791#section-2.3
+
+https://www.kaspersky.com.br/resource-center/definitions/what-is-an-ip-address
+
+https://www.ibm.com/docs/pt-br/aix/7.3?topic=protocols-internet-protocol
