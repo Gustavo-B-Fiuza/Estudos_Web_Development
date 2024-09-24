@@ -47,3 +47,5 @@ https://datatracker.ietf.org/doc/html/rfc791#section-2.3
 https://www.kaspersky.com.br/resource-center/definitions/what-is-an-ip-address
 
 https://www.ibm.com/docs/pt-br/aix/7.3?topic=protocols-internet-protocol
+
+https://www.fortinet.com/br/resources/cyberglossary/what-is-ip-address
